@@ -1,0 +1,3 @@
+
+class ShipOrder:
+    pass

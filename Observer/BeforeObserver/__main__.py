@@ -1,4 +1,4 @@
-from kpi_data import KPI_Data
+from .kpi_data import KPI_Data
 
 # REport in current KPI values
 for kpi in KPI_Data:

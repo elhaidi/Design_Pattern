@@ -16,6 +16,6 @@ class AbsSubject:
     def notify(self, value=None):
         for observer in self._observers:
             if value is None:
-                observer.notify()
+                observer.update()
             else:
-                observer.notify(value)
+                observer.update(value)

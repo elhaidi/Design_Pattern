@@ -9,5 +9,5 @@ class AbsOrderCommand:
     
 
     @abc.abstractproperty
-    def description:
+    def description(self):
         pass

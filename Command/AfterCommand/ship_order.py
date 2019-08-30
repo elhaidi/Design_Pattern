@@ -1,3 +1,8 @@
-
+from command_abc import AbsCommand
+from order_command_abc import AbsOrderCommand
 class ShipOrder:
-    pass
+    name ='ShipOrder'
+    description = 'Shiep ypur order'
+
+    def execute(self):
+        print('Exectuing the Shipping')

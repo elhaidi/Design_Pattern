@@ -1,7 +1,7 @@
-from .command_abc import AbsCommand
-from .order_command_abc import AbsOrderCommand
+from command_abc import AbsCommand
+from order_command_abc import AbsOrderCommand
 
-class UpdateOrder(AbsCOmmand,AbsORderCommand)
+class UpdateOrder(AbsCommand,AbsOrderCommand):
 
     name = "UpdateQuantity"
     description = "UpdateQuantity number"

@@ -17,7 +17,7 @@ def print_usage(commands):
         print("{}".format(command.description))
 
 def parse_command(commands,args):
-    command = commands.setdefautl(args[0],NoCommand)
+    command = commands.setdefault(args[0],NoCommand)
     return command(args)
 
 

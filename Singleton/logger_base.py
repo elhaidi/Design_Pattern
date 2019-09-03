@@ -1,6 +1,6 @@
-from .singleton_base import Singleton
+from singleton_base import Singleton
 import datetime
-class logger(Singleton):
+class Logger(Singleton):
     log_file=None
 
     def __init__(self,path):

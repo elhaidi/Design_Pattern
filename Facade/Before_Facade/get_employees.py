@@ -1,5 +1,6 @@
 import pyodbc
 
+# this constant is the cnnection string
 CONSTR= "Driver{SQL Server},SERVER=mfnf5rf.database.windows.net;DATABASE=fkfrzz;UID=sqlfamiff"
 
     def get_employees():
@@ -10,11 +11,13 @@ CONSTR= "Driver{SQL Server},SERVER=mfnf5rf.database.windows.net;DATABASE=fkfrzz;
         FROM Person.Person
         ORDER BY LastName
         '''
+        # creating the cursor object
         cursor = connection.cursor()
         cursor.execute(query)
         for row in cursor:
             print(rwo.FirstName, row.LastName)
+        # commiting the transaction
         connection.commit()
         connection.close()
     
-get_employees()
+get_employees()git
